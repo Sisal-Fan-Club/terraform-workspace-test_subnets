@@ -1,6 +1,6 @@
 locals {
   vcn = local.tfe_workspace_outputs.vcn.vcn
-  test_compartment = local.tfe_workspace_outputs.root_compartment.root_compartment
+  test_compartment = local.tfe_workspace_outputs.test_compartment.test_compartment
   private_subnet = oci_core_subnet.private_subnet
   dmz_subnet = oci_core_subnet.dmz_subnet
 }
