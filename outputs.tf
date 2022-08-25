@@ -1,5 +1,5 @@
-output "private_subnet" {
-  value = local.private_subnet
+output "app_subnet" {
+  value = local.app_subnet
   
   sensitive = true
 }
