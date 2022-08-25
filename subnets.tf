@@ -29,7 +29,7 @@ resource "oci_core_subnet" "dmz_subnet" {
   display_name = "DMZ - Test Environment"
   cidr_block = "10.0.100.0/24"
   prohibit_internet_ingress = false
-  route_table_id = dmz_route_table.id
+  route_table_id = local.dmz_route_table.id
   
   freeform_tags = merge({
     security-profile = "dmz"
